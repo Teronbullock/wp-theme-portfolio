@@ -1,0 +1,48 @@
+/* ================================= 
+footer
+==================================== */
+@import '../helpers.scss';
+
+.footer {
+  background: #e2e2e2;
+  color: #19131a;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer__container {
+  margin: 0 auto;
+}
+
+.footer__icons {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__item {
+  display: inline-block;
+  padding: 0 2rem 0 0;
+}
+
+// .footer__icon-link {
+// }
+.footer__icon-link > svg,
+.footer__copyright {
+  color: #6f6f6f;
+}
+
+.footer__icon-link > svg {
+  font-size: 2.125rem;
+}
+
+.footer__copyright {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  text-align: center;
+}

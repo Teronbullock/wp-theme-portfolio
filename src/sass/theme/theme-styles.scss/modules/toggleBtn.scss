@@ -1,0 +1,64 @@
+/* ================================= 
+toggleBtn
+==================================== */
+
+@import '../helpers.scss';
+
+.toggleBtn {
+  // width: 48px;
+  // height: 48px;
+  // cursor: pointer;
+  // background-color: transparent;
+  // border: #0000;
+  // border-radius: 5px;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  z-index: 500;
+  outline: none;
+
+  @include mq(m) {
+    top: 30px;
+    right: 30px;
+  }
+
+  @include mq(l) {
+    display: none;
+  }
+}
+
+.toggleBtn > span {
+  transform: none;
+  // -webkit-transform: rotate(45deg);
+  //   transform: rotate(45deg);
+}
+
+.toggleBtn--bar1,
+.toggleBtn--bar2,
+.toggleBtn--bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 7px 0;
+  transition: 0.2s;
+}
+
+.change .toggleBtn--bar1,
+.change .toggleBtn--bar3 {
+  background-color: #061319 ;
+}
+
+.change .toggleBtn--bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .toggleBtn--bar2 {
+  opacity: 0;
+}
+
+.change .toggleBtn--bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+  
+}

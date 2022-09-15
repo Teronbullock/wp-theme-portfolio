@@ -1,0 +1,48 @@
+/* ================================= 
+  btn
+==================================== */
+
+@import '../helpers.scss';
+
+.btn { 
+  padding: 0 1.5rem;
+  background-color: #2cbbff;
+  color: #0d2f40;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  height: 3rem;
+  margin: 1rem 0;
+  line-height: 3;
+  letter-spacing: .5px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  outline: none;
+  transition-timing-function: ease;
+  transition: padding .3s;
+
+  &:hover {
+    padding-left: 30px;
+  }
+
+  &:hover .btn--icon {
+    margin-left: 5px;
+    opacity: 1;
+  }
+
+  @include mq(m) {
+    width: 160px;
+  }
+}
+
+.btn--icon {
+  margin-left: -16px;
+  font-size: 14px;
+  opacity: 0;
+  transition-timing-function: ease;
+  transition:  opacity 0.1s, margin-left 0.3s;
+}

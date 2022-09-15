@@ -1,0 +1,43 @@
+/* ================================= 
+  Hero btn 
+==================================== */
+
+@import '../helpers.scss';
+
+.btn-hero {
+  width: 160px;
+  padding: 0 2rem;
+  background-color: rgb(250,128,114);
+  color: #0d2f40;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  height: 3rem;
+  line-height: 3;
+  letter-spacing: .5px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  outline: none;
+  transition-timing-function: ease;
+  transition: padding .3s;
+}
+
+.btn-hero:hover {
+  padding-left: 30px;
+}
+
+.btn-hero:hover .btn-hero--icon {
+  margin-left: 5px;
+  opacity: 1;
+}
+
+.btn-hero--icon {
+  margin-left: -16px;
+  opacity: 0;
+  transition-timing-function: ease;
+  transition:  opacity 0.1s, margin-left 0.3s;
+}

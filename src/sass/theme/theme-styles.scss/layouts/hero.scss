@@ -1,0 +1,144 @@
+/* ================================= 
+  Hero
+  main colors :
+  aqua- #74BDCB
+==================================== */
+@import '../helpers.scss';
+
+.l-hero,
+.l-hero__cover {
+  min-height: 100vh;
+}
+
+.l-hero,
+.l-hero__title--highlight {
+  color: $color-wh;
+}
+
+.l-hero {
+  width: 100vw;
+  background-color: $color-bk;
+  background-position: 85% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(l) {
+    background-position: 37%;
+  }
+
+  @include mq(xl) {
+    background-position: center;
+  }
+}
+
+.l-hero__cover {
+  background-color: rgba(18, 48, 68, 0.5);
+  padding: 35% 1rem 1rem;
+
+  @include mq(sm) {
+    padding: 45% 1rem 1rem;
+  }
+
+  @include mq(m) {
+    padding: 15rem 0 1rem;
+  }
+
+  @include mq(l) {
+    padding: 18rem 0 1rem;
+  }
+
+  @include mq(xl) {
+    padding: 15rem 0 1rem;
+  }
+}
+
+.l-hero__copy {
+  margin-bottom: 1.75rem;
+
+  @include mq(m) {
+    width: 500px;
+  }
+}
+
+.l-hero__title {
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  @include mq(sm) {
+    margin: 0 0 3rem;
+  }
+
+  @include mq(i) {
+    line-height: 1.7;
+  }
+
+  @include mq(m) {
+    margin: 0 0 4rem;
+  }
+}
+
+.l-hero__title--prim {
+  margin: 0;
+  font-size: 16px;
+
+  @include mq(m) {
+    font-size: 22px;
+  }
+}
+
+.l-hero__title--large {
+  margin: 1.125rem 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+  @include mq(m) {
+    font-size: 50px;
+  }
+}
+
+.l-hero__action-container {
+  margin-bottom: 2.25rem;
+
+  @include mq(m) {
+    margin-top: 3.5rem;
+  }
+}
+
+.l-hero__list--social {
+  width: 150px;
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  cursor: default;
+}
+
+.l-hero__item {
+  vertical-align: middle;
+}
+
+.l-hero__item--actions {
+  padding: 1.5rem 0 0;
+  margin-bottom: 1rem;
+}
+
+.l-hero__item--social,
+.l-hero__icon {
+  display: inline-block;
+}
+
+.l-hero__icon-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  cursor: default;
+}
+
+.l-hero__icon-link {
+  margin-right: 2rem;
+}
+
+.l-hero__icon-link > svg {
+  font-size: 2rem;
+}

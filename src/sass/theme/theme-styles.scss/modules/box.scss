@@ -1,0 +1,22 @@
+/* ================================= 
+  box
+==================================== */
+
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box--row {
+  @include mq(m) {
+    flex-direction: row;
+  }
+}
+
+.box--center {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}

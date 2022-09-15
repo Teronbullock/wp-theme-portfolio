@@ -1,0 +1,64 @@
+@import '../helpers.scss';
+
+/* ================================= 
+  navbar
+==================================== */
+
+// navbar__container
+.navbar__container {
+  padding: .5rem 0;
+  position: relative;
+}
+
+// navbar__title
+.navbar__title {
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  display: none;
+  font-weight: 700;
+
+  @include mq(l) {
+    display: block;
+  }
+
+}
+
+// navbar__link
+.navbar__link {
+  color: $color-wh;
+  font-weight: 400;
+  border: 0;
+  margin-right: .125rem;
+}
+
+
+
+// nav 
+
+.nav-item {
+    display: inline-block;
+    margin: 0 20px; 
+  }
+  
+  .nav-link {
+    color: #fff;  
+    text-transform: uppercase;
+    border-bottom: 2px transparent solid;
+    padding-bottom: 0.25rem;
+    transition: border-color 0.5s;
+  
+    &:hover {
+      color: #FFA384;
+      border-color: #FFA384;
+  
+    }
+  
+  }
+
+  // navbar-collapse
+  .navbar-collapse {
+    
+  }
